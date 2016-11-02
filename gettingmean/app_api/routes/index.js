@@ -16,8 +16,12 @@ router.get('/locations/:locationid/reviews/:reviewid', ctrlReviews.reviewsReadOn
 router.put('/locations/:locationid/reviews/:reviewid', ctrlReviews.reviewsUpdateOne);
 router.delete('/locations/:locationid/reviews/:reviewid', ctrlReviews.reviewsDeleteOne);
 
+//airplane stuff
 router.get('/flap/:flapid', ctrlAirplanes.flapReadOne);
+router.get('/flap/', ctrlAirplanes.flapReadOne);
 router.get('/flapv/:flapvid', ctrlAirplanes.flapvReadOne);
+router.get('/flapv/', ctrlAirplanes.flapvReadOne);
 router.get('/vfri/:vfriid', ctrlAirplanes.vfriReadOne);
+router.get('/vfri/', ctrlAirplanes.vfriReadOne);
 
 module.exports = router;
